@@ -1,6 +1,8 @@
 import os
 import re
 from collections import defaultdict
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from typing import Any
 
 import requests
@@ -23,6 +25,7 @@ SCHOOL_PREFIX_MAP = {
 
 SEMESTER_PATTERN = re.compile(r"^(\d{3})(上|下)\s+")
 SCHOOL_NAME_PATTERN = re.compile(r"^(交大|竹科實中)\s+")
+TIMEZONE = ZoneInfo("Asia/Taipei")
 
 
 def fetch_repos() -> list[dict[str, Any]]:
@@ -112,6 +115,8 @@ def build_markdown(repos: list[dict[str, Any]]) -> str:
         "# Coursework",
         "",
         "This repository indexes my coursework repositories.",
+        "",
+        f"_Last updated: {datetime.now(TIMEZONE).date().isoformat()}_",
         "",
     ]
 
