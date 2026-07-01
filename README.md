@@ -3,9 +3,15 @@
 
 This repository indexes my coursework repositories.
 
-_Last updated: 2026-06-01_
+_Last updated: 2026-07-01_
 
 ## NYCU
+
+### 114下
+
+- [深度學習](https://github.com/gainsborourse/NYCU_Deep-Learning)
+- [深度學習 期末專題](https://github.com/gainsborourse/NYCU_DL-Final-Project)
+- [記憶體與儲存系統](https://github.com/gainsborourse/NYCU_Memory-and-Storage-Systems)
 
 ### 114上
 
